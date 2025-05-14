@@ -12,15 +12,22 @@ Attempts to evaluate simple mathematical expressions using the shunting yard alg
 
 This project uses the [clang](https://clang.llvm.org/) compiler, but really, you can use any C compiler you want that supports the C11 standard.
 
-Since I use Windows, I included a `build.bat` file that you can run in the command prompt to build the project (If you are using Windows).
+I included build scripts that you can run in a terminal to build the project (`build.bat` for Windows, `build.sh` for Linux).
 
-This will create a new directory named `bin`, and within it, an executable named `calc.exe`.
+This will create a new directory named `bin`, and within it, an executable named `calc` (`calc.exe` on Windows).
 
-Then simply run `calc.exe` to start the repl!
+Then simply run `calc` (or `calc.exe`) to start the repl!
 
+### Windows
 ```console
 > build.bat
 > bin\calc.exe
+```
+
+### Linux
+```
+$ ./build.sh
+$ bin/calc
 ```
 
 ## Resources
